@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1020;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #11182b;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 span,
+.hero h1 span {
+    color: #7c9cff;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7c9cff;
+}
+
+.hero {
+    min-height: 70vh;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: radial-gradient(circle at top right, #263b70, #0b1020 65%);
+}
+
+.tag {
+    color: #a9bbff;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 60px);
+    line-height: 1.2;
+}
+
+.hero h2 {
+    margin: 15px 0;
+    color: #b9c5e8;
+}
+
+.hero > p:not(.tag) {
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #718cff;
+    color: #081020;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #a2b3ff;
+}
+
+.section {
+    padding: 65px 8%;
+    scroll-margin-top: 20px;
+}
+
+.section h2 {
+    color: #9eb0ff;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    max-width: 750px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span,
+.education-card {
+    background: #151f35;
+    border: 1px solid #293858;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.education-card p {
+    color: #c4cce0;
+    margin-top: 5px;
+}
+
+#contact .btn {
+    margin-top: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: #b9c5e8;
+    background: #11182b;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 6%;
+    }
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+}
